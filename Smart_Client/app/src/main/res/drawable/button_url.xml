@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014.
+  ~ This Project and its content is copyright of ftc
+  ~ All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+
+        <color android:color="@color/bg_gradient_end"></color>
+    </item>
+    <item>
+        <color android:color="@color/bg_gradient_end"></color>
+    </item>
+</selector>

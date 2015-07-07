@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!--  左邊管制點狀態圖案 -->
+    <LinearLayout android:id="@+id/status_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_navigation_cancel"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/status_thumbnail"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:orientation="horizontal">
+
+        <!-- 管制點名稱 -->
+        <TextView
+            android:id="@+id/txtEquipName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/text_margin_small"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttom_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/top_info"
+        android:layout_toRightOf="@+id/status_thumbnail">
+
+        <!-- 設備狀態-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_equip_total_count"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/txt_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+
+        <!-- 檢點方式名稱-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_equip_finish_count"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/txt_finish_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/dialog_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/id_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="請聯繫 台塑網科技(台塑關係企業)"
+            android:layout_marginBottom="@dimen/text_margin_meduim"/>
+
+        <LinearLayout
+            android:id="@+id/tel_container"
+            android:layout_below="@+id/id_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin_meduim"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_phone"/>
+
+            <TextView
+                android:id="@+id/id_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/bg_blue_gradient_end"
+                android:text="@string/lb_offical_tel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:text=" 轉7086 傅先生"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin_meduim"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:text="產品介紹" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_product_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/bg_blue_gradient_end"
+            android:text="@string/lb_official_url"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="@dimen/divider_width"
+        android:layout_width="match_parent"
+        android:background="@color/divider_gray" />
+
+    <!-- 下方功能列 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0"
+        >
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size_small"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/action_close" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ControlequipFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_top_green"
+            android:padding="@dimen/text_padding_meduim"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin_meduim"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_current_cp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+                <TextView
+
+                    android:id="@+id/lb_point_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DP-001 氣電運轉巡檢路線"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到位時間\u0020:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+                <TextView
+                    android:id="@+id/lb_arrive_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+            </LinearLayout>
+
+            <!-- 進度條 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_progress"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginRight="@dimen/text_margin_meduim"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="0" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_rest_equip"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/equip_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

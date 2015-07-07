@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <!-- 感官列 -->
+            <LinearLayout
+                android:id="@+id/feel_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/text_margin_meduim">
+
+                <TextView
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="@string/lb_feel_item" />
+
+
+                <RadioGroup android:id="@+id/rdg_feel"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                    <RadioButton android:id="@+id/rb_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/temp_color"
+                        android:button="@drawable/rb_check"
+                        android:layout_weight="1"
+                        android:text="@string/lb_feel_ok"
+                        />
+
+                    <RadioButton android:id="@+id/rb_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/holo_red_light"
+                        android:button="@drawable/rb_error"
+
+                        android:layout_weight="1"
+                        android:text="@string/lb_feel_error"
+
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!-- 抄表列 -->
+            <LinearLayout
+                android:id="@+id/record_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/text_margin_meduim">
+
+                <!-- 左列 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_medium"
+                        android:text="@string/lb_record" />
+
+
+                    <EditText
+                        android:id="@+id/txt_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_record"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:inputType="number|phone" />
+
+                </LinearLayout>
+
+                <!-- 右列 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:lineSpacingMultiplier="1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/lb_standard_value" />
+
+                        <TextView
+                            android:id="@+id/lb_standar_value"
+                            android:lineSpacingMultiplier="1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    </LinearLayout>
+
+
+                    <!-- 上限 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:lineSpacingMultiplier="1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/lb_upper" />
+
+                        <TextView
+                            android:id="@+id/lb_hight_value"
+                            android:textSize="@dimen/text_size_small"
+                            android:lineSpacingMultiplier="1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <!-- 下限 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:lineSpacingMultiplier="1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/lb_lower" />
+
+                        <TextView
+                            android:id="@+id/lb_low_value"
+                            android:lineSpacingMultiplier="1.2"
+                            android:textSize="@dimen/text_size_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/text_margin_meduim">
+
+                <TextView
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="@string/lb_comment" />
+
+                <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+                <LinearLayout
+                    android:focusable="true" android:focusableInTouchMode="true"
+                    android:layout_width="0px" android:layout_height="0px"/>
+
+                <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+                        to prevent the dummy from receiving focus again -->
+
+                <fpg.ftc.si.smart.widgets.NoEnterEditText
+                    android:id="@+id/txt_comment"
+                    android:hint="@string/hint_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nextFocusUp="@id/txt_comment"
+                    android:nextFocusLeft="@id/txt_comment"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/is_error_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_height="@dimen/divider_width"
+                android:layout_width="match_parent"
+                android:background="@color/divider_gray" />
+
+            <LinearLayout
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_medium"
+                        android:text="@string/lb_abnornal" />
+
+                    <Spinner
+                        android:id="@+id/sp_abnornal"
+                        android:spinnerMode="dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deal_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_medium"
+                        android:text="@string/lb_deal" />
+
+                    <Spinner
+                        android:id="@+id/sp_deal"
+                        android:spinnerMode="dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 照片 -->
+        <LinearLayout
+            android:id="@+id/photo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_height="@dimen/divider_width"
+                android:layout_width="match_parent"
+                android:background="@color/divider_gray" />
+
+            <Gallery
+                android:id="@+id/gallery_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_meduim"
+                android:layout_marginBottom="@dimen/text_margin_meduim"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <!-- 下方功能列 -->
+    <RelativeLayout
+        android:id="@+id/btn_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_gray_no_corner"
+        >
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_camera"
+            android:layout_alignParentLeft="true"
+            android:text="@string/btn_take_photo"
+            android:textColor="@color/soft_black"
+            />
+
+        <Button android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_temp_save"
+            android:drawableLeft="@drawable/ic_action_save"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/soft_black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_dark"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_current_equip"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                />
+
+            <TextView
+                android:id="@+id/lb_equip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DP-001 氣電運轉巡檢路線"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                />
+
+        </LinearLayout>
+
+        <!-- 進度條 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_progress"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginRight="@dimen/text_margin_meduim"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="100"
+                android:progress="0" />
+
+
+        </LinearLayout>
+
+
+
+        <!-- 下方按鈕 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <Button
+                android:id="@+id/btn_all_feel_is_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_all_feel_is_good"
+                android:textColor="@color/white"/>
+
+
+            <Button
+                android:id="@+id/btn_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/lb_rest_equip"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_save"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_change_mode"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_change_code"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <!-- main content -->
+    <FrameLayout
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/check_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:longClickable="true"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+
+
+        <ViewStub
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout="@layout/empty_download_layout" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

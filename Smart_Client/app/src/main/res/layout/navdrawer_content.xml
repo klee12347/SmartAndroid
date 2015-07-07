@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/chosen_account_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:foreground="@color/dark_gray">
+
+
+
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Account items -->
+        <LinearLayout
+            android:id="@+id/account_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <!-- Drawer items -->
+        <LinearLayout
+            android:id="@+id/navdrawer_items_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/list_slidermenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@color/list_divider2"
+                android:dividerHeight="1dp"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</merge>

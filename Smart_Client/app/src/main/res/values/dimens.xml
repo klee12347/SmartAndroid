@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 給ListView單筆資料列 -->
+    <dimen name="list_row_margin">8dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">12.0sp</dimen>
+    <dimen name="text_size_micro">14.0sp</dimen>
+    <dimen name="text_size_small">16.0sp</dimen>
+    <dimen name="text_size_medium">18.0sp</dimen>
+    <dimen name="text_size_large">20.0sp</dimen>
+    <dimen name="text_size_x_large">26.0sp</dimen>
+    <dimen name="text_size_dayum">38.0sp</dimen>
+
+    <!-- divider sizes -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+
+    <!-- margin sizes -->
+    <dimen name="text_margin_small">3dp</dimen>
+    <dimen name="text_margin_meduim">5dp</dimen>
+    <dimen name="text_margin_large">7dp</dimen>
+    <dimen name="text_margin_x_large">9dp</dimen>
+    <dimen name="text_margin_dayum">11dp</dimen>
+
+    <!-- padding sizes -->
+    <dimen name="text_padding_small">3dp</dimen>
+    <dimen name="text_padding_meduim">5dp</dimen>
+    <dimen name="text_padding_large">7dp</dimen>
+
+    <!-- navdrawer sizes -->
+    <dimen name="navdrawer_width">240dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="dialog_margin">9dip</dimen>
+
+</resources>

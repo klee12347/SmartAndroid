@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014 FTC Inc. All rights reserved.
+  -->
+
+<resources>
+    <item type="id" name="action_next" />
+    <item type="id" name="slide_menu_setting" />
+    <item type="id" name="slide_menu_patrol_data" />
+    <item type="id" name="slide_menu_upload" />
+    <item type="id" name="slide_menu_sign_out" />
+</resources>

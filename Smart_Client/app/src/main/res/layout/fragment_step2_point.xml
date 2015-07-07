@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ControlPointFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_top"
+            android:padding="@dimen/text_padding_meduim"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin_meduim"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_current_route"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+                <TextView
+
+                    android:id="@+id/lb_way_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DP-001 氣電運轉巡檢路線"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    />
+
+            </LinearLayout>
+
+            <!-- 下方按鈕 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_note"
+                        android:textColor="@color/white"/>
+
+                    <TextView android:id="@+id/counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/counter_bg"
+                        android:layout_alignRight="@+id/btn_note"
+                        android:layout_alignTop="@+id/btn_note"
+                        android:layout_centerVertical="true"
+                        android:text="4"
+                        android:visibility="gone"
+                        android:textColor="@color/counter_text_color"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/point_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

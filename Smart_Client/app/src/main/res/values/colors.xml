@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主題相關 -->
+    <color name="theme_primary">#0088cc</color>
+
+    <color name="theme_dark_primary">#005076</color>
+
+    <!-- See through -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Black -->
+    <color name="black">#ff000000</color>
+
+    <!-- White -->
+    <color name="white">#ffffffff</color>
+
+    <!-- Transparent black -->
+    <color name="transparent_black">#99000000</color>
+
+    <!-- Transparent white -->
+    <color name="transparent_white">#ffcccccc</color>
+
+    <!-- Dark transparent color -->
+    <color name="list_item_background">#c1000000</color>
+
+    <!-- A darkish color used for the action bar -->
+    <color name="action_bar_color">#ff0d0d0d</color>
+
+    <!-- A light, Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+
+    <!-- A light, transparent Holo shade of blue -->
+    <color name="holo_blue_light_transparent">#9933b5e5</color>
+
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+
+    <color name="dark_gray">#dedede</color>
+
+    <color name="light_gray">#FAFAFA</color>
+
+    <color name="heavy_gray">#777777</color>
+
+    <color name="soft_black">#606060</color>
+
+
+    <color name="dark_green">#4f9b5e</color>
+
+
+    <color name="check_item_green">#B1CA71</color>
+
+    <color name="check_item_red">#F5D0D0</color>
+
+    <color name="sky_light">#E0EAF1</color>
+
+    <color name="sky_yellow">#DADAB1</color>
+
+    <!-- 分隔線 -->
+    <color name="divider_green">#168686</color>
+    <color name="divider_gray">#B4B6BA</color>
+
+    <color name="theme_background">#D3D6DB</color>
+
+
+    <!-- 抄表結果 都有透明度 -->
+    <color name="result_ok">#b74f9b5e</color>
+    <color name="result_warm">#ffff9112</color>
+    <color name="result_error">#ffff4444</color>
+    <color name="temp_color">#4f9b5e</color>
+
+
+    <color name="bg_blue_gradient_start">#dd2f6fbf</color>
+    <color name="bg_blue_gradient_end">#dd309cf5</color>
+
+    <color name="bg_green_gradient_start">#4f9b5e</color>
+    <color name="bg_green_gradient_end">#ff67c677</color>
+
+
+    <color name="bg_dark_gradient_start">#272727</color>
+    <color name="bg_dark_gradient_end">#95666666</color>
+
+    <!-- 偷來的 -->
+    <color name="bg_gradient_start">#ff38a5cc</color>
+    <color name="bg_gradient_end">#ff2168cc</color>
+    <color name="bg_button_login">#95666666</color>
+
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <!--<color name="list_divider">#272727</color>-->
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="list_divider2">#272727</color>
+
+    <color name="state_disable">#9D9FA2</color>
+
+
+    <!-- navdrawer -->
+    <color name="navdrawer_background">@color/white</color>
+    <color name="navdrawer_text_color">@color/black</color>
+    <color name="navdrawer_text_color_selected">@color/theme_primary</color>
+    <color name="navdrawer_icon_tint">#808080</color>
+    <color name="navdrawer_icon_tint_selected">@color/theme_primary</color>
+
+</resources>

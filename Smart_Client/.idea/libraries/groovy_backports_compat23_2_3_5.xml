@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="groovy-backports-compat23-2.3.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-backports-compat23/2.3.5/556a509661187440ed39e923c7e6c9236a052c86/groovy-backports-compat23-2.3.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-backports-compat23/2.3.5/b161630383c9601888bfd6750455ca7ab43e972e/groovy-backports-compat23-2.3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

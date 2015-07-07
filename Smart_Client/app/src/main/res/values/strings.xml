@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Smart 巡檢</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_group_explore">資料下載</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lb_entry_execute">執行巡檢</string>
+    <string name="lb_entry_download">資料下載</string>
+    <string name="lb_entry_setting">系統設定</string>
+    <string name="hint_account">請輸入帳號</string>
+    <string name="hint_password">請輸入密碼</string>
+    <string name="lb_login">登入</string>
+    <string name="lb_setting">設定</string>
+    <string name="lb_copy_right">Copyright(c) FTC 2014</string>
+    <string name="title_activity_execute">設備</string>
+    <string name="lb_arrtime">應到時間:</string>
+    <string name="lb_timerange">時間範圍:</string>
+    <string name="title_activity_settings">設定</string>
+
+    <!-- General process_settings -->
+    <string name="pref_header_general">一般設定</string>
+    <string name="pref_title_web_ip">伺服器主機</string>
+    <string name="pref_title_web_name">伺服器名稱</string>
+    <string name="pref_title_db_ip">資料庫主機</string>
+    <string name="pref_web_name_default">SmartWebAPI</string>
+    <string name="pref_web_ip_default">10.232.227.219</string>
+
+    <!-- 資料下載 tab 選單 -->
+    <string-array name="depart_view_items">
+        <item>組織</item>
+        <item>人員</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>上傳</item>
+        <item>設定</item>
+        <item>登出</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="request_progress_waiting">資料讀取中...請稍後</string>
+    <string name="title_activity_execute_cp">抄表</string>
+    <string name="title_template_step">基準 <xliff:g id="step_number">%1$d</xliff:g>: %2$s</string>
+    <string name="action_previous">上一筆</string>
+    <string name="action_finish">完成</string>
+    <string name="action_next">下一筆</string>
+    <string name="login_progress_signing_in">登入中,請稍後...</string>
+    <string name="error_field_required">此欄位必填</string>
+    <string name="error_incorrect_user">帳號不存在</string>
+    <string name="error_incorrect_password">密碼不正確</string>
+    <string name="error_rdif_cannot_found">查無此管制點</string>
+    <string name="system_dialog_title">系統訊息</string>
+    <string name="action_ok">確定</string>
+    <string name="action_cancel">取消</string>
+    <string name="error_invalid_card">無法辨識的卡片</string>
+    <string name="hint_record">抄表數值</string>
+    <string name="title_template_pager">(%1$d/%2$d)</string>
+    <string name="format_item_choosed">已選取 %1$d 個</string>
+    <string name="system_sure_to_leave">總共需檢查6項</string>
+
+    <string-array name="control_point_error_values">
+        <item>RFID卡異常</item>
+        <item>RFID感應器異常</item>
+        <item>RFID卡遺失</item>
+    </string-array>
+
+    <string name="title_activity_nfctest_my">NFCTestMyActivity</string>
+    <string name="action_delete">刪除</string>
+    <string name="error_not_connect_server">與伺服器主機連線失敗</string>
+    <string name="action_retry">重試</string>
+    <string name="lb_download_default">下載</string>
+    <string name="format_download_item_choosed">下載(%1$d)</string>
+    <string name="system_sure_to_download">下載確認...</string>
+    <string name="system_warn_to_download_info">下載巡檢資料會將原本已存在的 基準資料 給刪除,確定嗎?</string>
+    <string name="error_download_crash">資料下載失敗,請重新再試一次!</string>
+    <string name="system_download_finish">下載成功</string>
+    <string name="navdrawer_item_upload">上傳</string>
+    <string name="navdrawer_item_patrol_data">巡檢紀錄</string>
+    <string name="navdrawer_item_settings">設定</string>
+    <string name="navdrawer_item_sign_out">登出</string>
+    <string name="lb_release_note">更新內容:</string>
+    <string name="action_not_now">現在還不要</string>
+    <string name="action_install">安裝</string>
+    <string name="system_dialog_title_update_app">有新的版本可更新</string>
+    <string name="lb_update_version_info_template">目前版本:%1$s,當前有新版本:%2$s 可進行更新,是否進行更新?</string>
+    <string name="system_dialog_title_update">下載中....</string>
+    <string name="system_update_now">程式下載中....請稍後(請保持連線)</string>
+    <string name="actionbar_title_route">1.請選擇路線</string>
+    <string name="actionbar_title_point">2.請選擇管制點</string>
+    <string name="actionbar_title_equip">3.請選擇設備</string>
+    <string name="actionbar_title_check">4.設備抄表</string>
+    <string name="system_warn_to_set_all_feel_is_good">要將所有感官設備設定成正常嗎?!</string>
+    <string name="lb_comment">備註:</string>
+    <string name="lb_abnornal">異常:</string>
+    <string name="lb_deal">對策:</string>
+    <string name="btn_take_photo">拍照</string>
+    <string name="system_message_connection_error">與Server端連線有問題</string>
+    <string name="system_message_update_group_data_fail">更新群組資料失敗,請稍後再試試</string>
+    <string name="system_message_sure_to_leave">確定要登出嗎?!</string>
+    <string name="system_message_not_done_sure_to_leave_cp">設備尚未檢查完成,確定要離開此管制點嗎?!</string>
+    <string name="system_message_no_data_can_save">沒有資料可以儲存,請先進行檢查</string>
+    <string name="system_message_save_success">儲存成功</string>
+    <string name="system_message_save_fail">儲存失敗!</string>
+    <string name="system_message_can_not_turn_off">此為重要設備無法備機</string>
+    <string name="system_message_set_all_feel_is_good">此動作會將未檢查屬於感官的部分，設定為正常，確定要執行嗎!?</string>
+    <string name="lb_current_equip">目前所在設備:</string>
+    <string name="lb_progress">完成度:</string>
+    <string name="lb_all_feel_is_good">感官正常</string>
+    <string name="lb_rest_equip">備機</string>
+    <string name="lb_save">儲存</string>
+    <string name="lb_change_code">模式切換</string>
+    <string name="lb_feel_item">感官:</string>
+    <string name="lb_feel_ok">正常</string>
+    <string name="lb_feel_error">異常</string>
+    <string name="hint_comment">備註內容</string>
+    <string name="lb_status">未檢查</string>
+    <string name="lb_record">抄表:</string>
+    <string name="lb_standard_value">標準:</string>
+    <string name="lb_upper">上限:</string>
+    <string name="lb_lower">下限:</string>
+    <string name="hint_user_search">請輸人名或帳號進行篩選</string>
+    <string name="lb_current_route">目前所在路線:</string>
+    <string name="lb_note">交代事項</string>
+    <string name="lb_current_cp">目前所在管制點:</string>
+    <string name="lb_total_count">應檢查設備數:</string>
+    <string name="lb_finish_count">實際檢查設備數:</string>
+    <string name="lb_equip_finish_count">完成數:</string>
+    <string name="lb_equip_total_count">基準數:</string>
+    <string name="lb_record_item">抄表:</string>
+
+    <!-- 感官欄位 -->
+    <string-array name="feel_values">
+        <item>正常</item>
+        <item>異常</item>
+    </string-array>
+
+    <!-- 上下列表抄表 動作 -->
+    <string-array name="list_record_on_long_menu">
+        <item>備註</item>
+        <item>拍照</item>
+    </string-array>
+
+    <string name="title_activity_patrol_data">PatrolDataActivity</string>
+    <string name="action_temp_save">暫存</string>
+    <string name="action_close">關閉</string>
+    <string name="lb_official_url"><u>http://www.efpg.com.tw/efpg/product_si/si_smt_1.asp</u></string>
+    <string name="lb_offical_tel"><u>02-27122211</u></string>
+
+</resources>

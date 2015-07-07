@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fpg.ftc.si.smart.widgets.FpgPreferenceCategory android:title="@string/pref_header_general" >
+        <!-- General -->
+        <fpg.ftc.si.smart.widgets.FpgEditTextPreference
+            android:key="KEY_WEB_IP"
+            android:title="@string/pref_title_web_ip"
+            android:capitalize="words"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/pref_web_ip_default"
+            android:singleLine="true"/>
+
+        <fpg.ftc.si.smart.widgets.FpgEditTextPreference
+            android:key="KEY_WEB_NAME"
+            android:title="@string/pref_title_web_name"
+            android:capitalize="words"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/pref_web_name_default"
+            android:singleLine="true"/>
+
+
+        <!--&lt;!&ndash; NOTE: ListPreference's summary should be set to its value by the activity code. &ndash;&gt;-->
+        <!--<fpg.ftc.patrol.widgets.FpgListPreference-->
+            <!--android:key="KEY_WEB_IP_PREVENT"-->
+            <!--android:defaultValue="10.110.3.41"-->
+            <!--android:entries="@array/pref_service_ip_titles"-->
+            <!--android:entryValues="@array/pref_service_ip_values"-->
+            <!--android:negativeButtonText="@null"-->
+            <!--android:positiveButtonText="@null"-->
+            <!--android:title="@string/pref_title_web_ip" />-->
+
+
+
+    </fpg.ftc.si.smart.widgets.FpgPreferenceCategory>
+</PreferenceScreen>

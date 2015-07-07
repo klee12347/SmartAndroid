@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="@dimen/list_row_margin">
+
+    <!--  左邊部門圖案 -->
+    <LinearLayout android:id="@+id/status_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding_small"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dropdown_icon_folder"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/status_thumbnail"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_depart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_medium"
+            android:text="部門集團"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_arror"
+        android:layout_alignParentRight="true"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+
+        android:src="@drawable/ic_arrow"/>
+
+</RelativeLayout>

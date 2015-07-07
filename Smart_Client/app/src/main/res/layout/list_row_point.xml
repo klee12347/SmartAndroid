@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dip" >
+
+    <!--  左邊管制點狀態圖案 -->
+    <RelativeLayout
+        android:id="@+id/status_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dip">
+
+        <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ok_gray"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/status_thumbnail"
+        android:layout_toLeftOf="@+id/thumbnail_container"
+        android:layout_centerInParent="true"
+        >
+
+        <!-- 管制點名稱 -->
+        <TextView
+            android:id="@+id/txtPointName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:text="G00011_聚合4F1234_測試資料區"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_meduim"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_time_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <!-- 時間範圍 -->
+            <TextView
+                android:id="@+id/txtRangeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/heavy_gray"
+                android:text="13:00~13:03"
+                android:textSize="@dimen/text_size_micro" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/text_margin_meduim"
+            >
+
+            <!-- 設備狀態-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_total_count"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/txt_total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textSize="@dimen/text_size_small"/>
+
+            </LinearLayout>
+
+            <!-- 檢點方式名稱-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_finish_count"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/txt_finish_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="20"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
